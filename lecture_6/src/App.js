@@ -6,8 +6,6 @@ import RestaurantCard from "./components/RestaurantCard";
 import SearchBar from "./components/SearchBar";
 import { restaurants } from "./utils/constants";
 
-import "../index.css";
-
 const App = () => {
   const [listOfRestaurants, setListOfRestaurants] = useState(restaurants);
   const fetchData = async () => {

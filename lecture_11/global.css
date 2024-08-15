@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html body {
+  margin: 0px;
+  padding: 0px;
+}
+.nav-items li {
+  list-style-type: none;
+  font-size: 20px;
+}
+.pages {
+  font-size: larger;
+  height: 88.75vh;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  background-color: #ff000088;
+}

@@ -30,4 +30,22 @@ const RestaurantCard = ({ id, name, imageId, ratings, cuisines }) => {
   );
 };
 
+export const withOfferLabel = (RestaurantCard) => {
+  return (props) => {
+    return (
+      <div className="relative">
+        <div
+          className="absolute z-10 text-white w-40 text-center rounded-t-2xl"
+          style={{
+            background:
+              "linear-gradient(rgba(27, 30, 36, 0) 0%, rgb(27, 30, 36) 84.21%)",
+          }}
+        >
+          {props.discountData.header + " " + props.discountData.subHeader}
+        </div>
+        <RestaurantCard {...props} />
+      </div>
+    );
+  };
+};
 export default RestaurantCard;
